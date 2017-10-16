@@ -1,22 +1,22 @@
 # EncodedPolyline
 A demo application of a Xamarin Forms project using Xamarin Forms Maps displaying an encoded polyline
 
-#The application
+# The application
 When first running the application the map is centered around the users geolocation using the geolocator plugin.
 
 You then have two buttons, one for changing the polyline, one for changing the polyline's colour.
 
-#Intersting parts
+# Intersting parts
 
 In the shared project you will find a subclass of a Xamarin.Forms.Maps Map which adds support for a Google style encoded polyline and setting its colour.
 The decoding of the polyline happens in this subclass and a dialog between this Forms control and it's custom renderer is established in order to properly display the map.
 
-#Android
+# Android
 
 Please don't forget to add your own Google Maps Android API key in the Manifest before running the app !
 
-#Reference
+# Reference
 
-I found where to decode the encoded polyline there (https://forums.xamarin.com/discussion/85684/how-can-i-draw-polyline-for-an-encoded-points-string)[https://forums.xamarin.com/discussion/85684/how-can-i-draw-polyline-for-an-encoded-points-string]
+I found where to decode the encoded polyline there [https://forums.xamarin.com/discussion/85684/how-can-i-draw-polyline-for-an-encoded-points-string](https://forums.xamarin.com/discussion/85684/how-can-i-draw-polyline-for-an-encoded-points-string)
 
 Thanks Luiz Gustavo !
