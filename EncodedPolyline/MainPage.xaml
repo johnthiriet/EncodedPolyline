@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:EncodedPolyline"
+    x:Class="EncodedPolyline.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:PolylineColorConverter x:Key="PolylineColorConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <local:CustomMap
+            x:Name="map"
+            MapType="Street"
+            EncodedPolyline="{Binding EncodedPolyline}"
+            PolylineColor="{Binding PolylineColor, Converter={StaticResource PolylineColorConverter}}"
+            WidthRequest="400"
+            HeightRequest="300"/>
+        <StackLayout Grid.Row="1" HorizontalOptions="Fill" VerticalOptions="End" Orientation="Horizontal">
+            <Button HorizontalOptions="FillAndExpand" Command="{Binding SwitchPolylineCommand}" Text="Switch polyline" />
+            <Button HorizontalOptions="FillAndExpand" Command="{Binding SwitchPolylineColorCommand}" Text="Switch color" />
+        </StackLayout>
+    </Grid>
+</ContentPage>
