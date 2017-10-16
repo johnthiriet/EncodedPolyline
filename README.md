@@ -6,7 +6,7 @@ When first running the application the map is centered around the users geolocat
 
 You then have two buttons, one for changing the polyline, one for changing the polyline's colour.
 
-# Intersting parts
+# Interesting parts
 
 In the shared project you will find a subclass of a Xamarin.Forms.Maps Map which adds support for a Google style encoded polyline and setting its colour.
 The decoding of the polyline happens in this subclass and a dialog between this Forms control and it's custom renderer is established in order to properly display the map.
