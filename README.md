@@ -14,7 +14,7 @@ The decoding of the polyline happens in this subclass and a dialog between this 
 # Encoded polyline format
 
 You can find more information about the Google's encoded polyline format on this website:
-(https://developers.google.com/maps/documentation/utilities/polylinealgorithm?hl=en)[https://developers.google.com/maps/documentation/utilities/polylinealgorithm?hl=en]
+[https://developers.google.com/maps/documentation/utilities/polylinealgorithm?hl=en](https://developers.google.com/maps/documentation/utilities/polylinealgorithm?hl=en)
 
 # Polyline example
 
